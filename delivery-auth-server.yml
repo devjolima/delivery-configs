@@ -34,12 +34,13 @@ spring:
         username: postgres
     jpa:
       hibernate:
-        ddl-auto: none
+        ddl-auto: create-drop
       show-sql: true
       database: postgresql
-      database-platform: org.hibernate.dialect.PostgreSQLDialect
+      database-platform: org.hibernate.dialect.PostgreSQL9Dialect
       open-in-view: false
       generate-ddl: false
       properties:
-       hibernate:
-        default_schema: oauth
+        hibernate:
+          default_schema: oauth
+          temp.use_jdbc_metadata_defaults: false
