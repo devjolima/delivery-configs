@@ -30,7 +30,7 @@ spring:
         password: '12345'
         platform: mysql
         schema: classpath:/sql/schema.sql
-        url: jdbc:postgresql://localhost:5432/oauth?createDatabaseIfNotExist=true
+        url: jdbc:postgresql://localhost:5432/postgres
         username: postgres
     jpa:
       hibernate:
@@ -40,3 +40,6 @@ spring:
       database-platform: org.hibernate.dialect.PostgreSQLDialect
       open-in-view: false
       generate-ddl: false
+      properties:
+       hibernate:
+        default_schema: oauth
