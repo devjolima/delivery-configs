@@ -18,7 +18,7 @@ spring:
         driver-class-name: org.postgresql.Driver
         password: '12345'
         platform: postgres
-        url: jdbc:postgresql://localhost:5432/oauth
+        url: jdbc:postgresql://localhost:5432/postgres
         username: postgres
     jpa:
       hibernate:
@@ -26,8 +26,5 @@ spring:
       show-sql: true
       database: postgresql
       database-platform: org.hibernate.dialect.PostgreSQL9Dialect
-      open-in-view: false
-      generate-ddl: false
-      properties:
-        hibernate:
-          temp.use_jdbc_metadata_defaults: false
+
+
