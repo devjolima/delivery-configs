@@ -13,18 +13,5 @@ eureka:
   server:
     wait-time-in-ms-when-sync-empty: 3000
 
-spring:
-    datasource:
-        driver-class-name: org.postgresql.Driver
-        password: '12345'
-        platform: postgres
-        url: jdbc:postgresql://localhost:5432/postgres
-        username: postgres
-    jpa:
-      hibernate:
-        ddl-auto: create
-      show-sql: true
-      database: postgresql
-      database-platform: org.hibernate.dialect.PostgreSQL9Dialect
 
 
