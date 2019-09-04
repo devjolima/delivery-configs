@@ -15,11 +15,11 @@ eureka:
 
 spring:
     datasource:
-        driver-class-name: org.postgresql.Driver
-        password: '12345'
+        driver-class-name: com.mysql.jdbc.Driver
+        password: 'jona2305'
         platform: postgres
-        url: jdbc:postgresql://localhost:5432/postgres
-        username: postgres
+        url: jdbc:mysql://localhost:3306/demo
+        username: root
     jpa:
       hibernate:
         ddl-auto: create
