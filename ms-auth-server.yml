@@ -17,14 +17,12 @@ spring:
     datasource:
         driver-class-name: com.mysql.jdbc.Driver
         password: 'jona2305'
-        platform: postgres
         url: jdbc:mysql://localhost:3306/demo
         username: root
     jpa:
       hibernate:
         ddl-auto: create
       show-sql: true
-      database: postgresql
-      database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+      database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
 
 
