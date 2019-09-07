@@ -19,8 +19,8 @@ zull:
       ms-auth-server:
          path: /autorizacao/**
          url: http://localhost:9092/api/
-         stripPrefix: false
+         stripPrefix: true
       ms-business-test: 
          path: /negocio/**
          url: http://localhost:9093/api/
-         stripPrefix: false
+         stripPrefix: true
