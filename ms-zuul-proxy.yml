@@ -18,9 +18,9 @@ zull:
    routes:
       ms-auth-server:
          path: /autorizacao/**
-         url: http://192.168.15.7:ms-auth-server:9092/api/
+         url: http://localhost:9092/api/
          stripPrefix: false
       ms-business-test: 
          path: /negocio/**
-         url: http://192.168.15.7:ms-business-test:9093/api/
+         url: http://localhost:9093/api/
          stripPrefix: false
