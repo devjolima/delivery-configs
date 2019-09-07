@@ -14,9 +14,3 @@ eureka:
     wait-time-in-ms-when-sync-empty: 3000
 
 
-zull:
-   routes:
-      ms-auth-server:
-         path: /autorizacao/**
-         url: 192.168.15.7:9092/api
-         stripPrefix: false
