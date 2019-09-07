@@ -12,3 +12,15 @@ eureka:
       defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
   server:
     wait-time-in-ms-when-sync-empty: 3000
+
+
+zull:
+   routes:
+      ms-auth-server:
+         path: /autorizacao/**
+         url: http://localhost:9092/api/
+         stripPrefix: false
+      ms-business-test: 
+         path: /negocio/**
+         url: http://localhost:9093/api/
+         stripPrefix: false
