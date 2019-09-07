@@ -16,11 +16,6 @@ eureka:
 
 zull:
    routes:
-      ms-auth-server:
          path: /autorizacao/**
-         serviceId: ms-auth-server
-         stripPrefix: true
-      ms-business-test: 
-         path: /negocio/**
-         serviceId: ms-business-test
-         stripPrefix: true
+         url: 192.168.15.7:9092/api
+         stripPrefix: false
